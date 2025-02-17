@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wang Lijun - Professor & Doctoral Supervisor</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #B22222; /* Deep red */
+            --secondary: #FF4500; /* Orange-red */
+            --accent: #FF6347; /* Tomato red */
+            --dark: #1A1A1A; /* Dark background */
+            --light: #F5F5F5; /* Light background */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+
+        body {
+            background: var(--dark);
+            color: var(--light);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            color: white;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            margin-bottom: 3rem;
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: sticky;
+            top: 0;
+            background: var(--dark);
+            padding: 1rem;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .navbar ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .navbar ul li {
+            margin: 0 1rem;
+        }
+
+        .navbar ul li a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            color: var(--accent);
+        }
+
+        /* Timeline */
+        .timeline {
+            border-left: 3px solid var(--secondary);
+            padding: 2rem;
+            margin: 3rem 0;
+            position: relative;
+        }
+
+        .timeline-item {
+            background: var(--dark);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        .timeline-item:hover {
+            transform: translateX(10px);
+        }
+
+        /* Card Grid */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .card {
+            background: var(--dark);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--accent);
+        }
+
+        /* Animations */
+        [data-aos] {
+            transition-property: transform, opacity;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            .header h1 {
+                font-size: 2.5rem;
+            }
+            .navbar ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header" data-aos="fade-down">
+        <div class="container">
+            <h1>Wang Lijun</h1>
+            <p>Professor · Doctoral Supervisor · Digital Media Art Expert</p>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> lijunwang2023us@outlook.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Room C915, Wencui Building, East Campus, Beijing Institute of Technology, Fangshan District, Beijing</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#awards">Awards</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <!-- Education -->
+        <section id="education" data-aos="fade-right">
+            <h2><i class="fas fa-graduation-cap"></i> Education & Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Beijing Institute of Technology, School of Design and Arts</h3>
+                    <p>2018.10 - Present · Professor/Doctoral Supervisor</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>University of California, Berkeley</h3>
+                    <p>2021.12 - 2023.12 · Visiting Scholar</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Royal Melbourne Institute of Technology, Australia</h3>
+                    <p>2014.03 - 2015.03 · Visiting Associate Professor</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Beijing Jiaotong University, School of Architecture and Art</h3>
+                    <p>2008.10 - 2018.10 · Lecturer, Associate Professor, Professor, Vice Dean</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Beijing Film Academy, Department of Fine Arts</h3>
+                    <p>2005.09 - 2008.06 · Ph.D. in Film Studies</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Tianjin University, School of Architecture</h3>
+                    <p>2001.09 - 2003.06 · Master of Arts in Design</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Hebei Normal University, Department of Fine Arts</h3>
+                    <p>1993.09 - 1997.06 · Bachelor of Arts in Fine Arts</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research -->
+        <section id="research" data-aos="fade-left">
+            <h2><i class="fas fa-search"></i> Research Directions</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Digital Media Art</h3>
+                    <p>Virtual Reality/Augmented Reality Applications, Digital Image Narrative Design</p>
+                </div>
+                <div class="card">
+                    <h3>Film Art Design</h3>
+                    <p>Innovation in Film Visual Design, Theory and Practice of Scene Art</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications -->
+        <section id="publications" data-aos="zoom-in">
+            <h2><i class="fas fa-book-open"></i> Academic Publications</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>"The Frenzy of Objects on Screen: Avant-garde Design in Contemporary Film Art and Its Aesthetic Thinking"</h3>
+                    <p>China Film Press, 2009.12</p>
+                </div>
+                <div class="card">
+                    <h3>"Urban Landscape Art Design and Spiritual Ecology"</h3>
+                    <p>China Architecture & Building Press, 2013.07</p>
+                </div>
+                <div class="card">
+                    <h3>"Creative Thinking in Design"</h3>
+                    <p>Jiangsu Science and Technology Press, 2013.09</p>
+                </div>
+                <div class="card">
+                    <h3>"Audiovisual Language of Digital Media"</h3>
+                    <p>Tsinghua University Press, 2016.06</p>
+                </div>
+                <div class="card">
+                    <h3>"Audiovisual Language of Digital Media (Second Edition)"</h3>
+                    <p>Tsinghua University Press, 2021.09</p>
+                </div>
+                <div class="card">
+                    <h3>"Innovation in Contemporary Chinese Film Art"</h3>
+                    <p>China Film Press, 2023.12</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" data-aos="fade-up">
+            <h2><i class="fas fa-flask"></i> Research Projects</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Ministry of Education Humanities and Social Sciences Project</h3>
+                    <p>"Research on the Innovation of Chinese Film Visual Design from the Perspective of International Aesthetics"</p>
+                </div>
+                <div class="card">
+                    <h3>Beijing Social Science Fund Project</h3>
+                    <p>"Research on the Application of New Media in Public Spaces in Beijing"</p>
+                </div>
+                <div class="card">
+                    <h3>National Natural Science Foundation of China</h3>
+                    <p>"Optimization Design Strategy for Subway Station Spaces Based on Transportation Hubs"</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards -->
+        <section id="awards" data-aos="fade-down">
+            <h2><i class="fas fa-trophy"></i> Awards</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>"Chengde Mountain Horse Culture Theme Park"</h3>
+                    <p>Bronze Award in the National Environmental Art Design Competition, 2013.12</p>
+                </div>
+                <div class="card">
+                    <h3>"Application of Virtual Reality in Advertising Media"</h3>
+                    <p>Excellent Paper Award at the First National Cultural Metaverse Summit, 2022.11</p>
+                </div>
+                <div class="card">
+                    <h3>"Audiovisual Language of Digital Media (Second Edition)"</h3>
+                    <p>Beijing Institute of Technology Excellent Textbook Award, 2022.08</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            easing: 'ease-out-quad'
+        });
+    </script>
+</body>
+</html>
